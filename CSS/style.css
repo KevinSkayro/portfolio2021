@@ -2,6 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   background: #030303;
+  scroll-behavior: smooth;
 }
 .video-container {
   height: 130vh;
@@ -61,11 +62,20 @@ body {
   border: 1px solid #f21137;
   cursor: pointer;
 }
+hr {
+  width: 70px;
+  height: 4px;
+  border: none;
+  background: #030303;
+}
+.white-hr {
+  background: #fff;
+}
 #about {
   margin-top: -10rem;
   transform: skewY(-5deg);
   background: #fff;
-  padding: 10rem 2rem;
+  padding: 5rem 2rem;
 }
 .about-container {
   transform: skewY(5deg);
@@ -76,17 +86,39 @@ body {
 }
 
 .about-container h2,
-.tech-container h2 {
-  font-size: 2.5rem;
+.tech-container h2,
+.projects-container h2 {
+  font-size: 3rem;
   text-align: center;
   line-height: 3rem;
 }
 .about-container p {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   max-width: 600px;
   text-align: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+.about-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 1000px;
+}
+
+.about-content {
+  flex: 1;
+  padding: 2rem;
+}
+.about-content h3 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.about-content img {
+  width: 100%;
 }
 #tech {
   margin-top: 5rem;
@@ -100,13 +132,29 @@ body {
 }
 .tech-inner-container {
   display: flex;
-  width: 100%;
+  width: 1000px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 .tech-inner-container .box {
   flex: 1;
-  font-size: 10rem;
+  font-size: 5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  min-height: 150px;
+}
+.box i {
+  transition: 0.5s ease-in-out;
+}
+.box i:hover {
+  font-size: 7rem;
+  transform: rotate(360deg);
+
+  cursor: pointer;
+  -webkit-filter: drop-shadow(1px 1px 2px #fff);
+  filter: drop-shadow(1px 1px 2px #fff);
 }
 .box-one {
   color: #e44d26;
@@ -122,7 +170,28 @@ body {
 }
 .box-five {
   color: #00758f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-five span {
+  margin-top: 0.2rem;
+  font-size: 1rem;
 }
 .box-six {
   color: #00749c;
+}
+#projects {
+  margin-top: 5rem;
+  transform: skewY(-5deg);
+  background: #fff;
+  padding: 10rem 2rem;
+}
+.projects-container {
+  transform: skewY(5deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
