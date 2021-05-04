@@ -75,7 +75,7 @@ hr {
   margin-top: -10rem;
   transform: skewY(-5deg);
   background: #fff;
-  padding: 5rem 2rem;
+  padding: 5rem 0;
 }
 .about-container {
   transform: skewY(5deg);
@@ -87,7 +87,8 @@ hr {
 
 .about-container h2,
 .tech-container h2,
-.projects-container h2 {
+.projects-container h2,
+.contact-container h2 {
   font-size: 3rem;
   text-align: center;
   line-height: 3rem;
@@ -151,10 +152,9 @@ hr {
 .box i:hover {
   font-size: 7rem;
   transform: rotate(360deg);
-
   cursor: pointer;
-  -webkit-filter: drop-shadow(1px 1px 2px #fff);
-  filter: drop-shadow(1px 1px 2px #fff);
+  -webkit-filter: drop-shadow(1px 1px 1px #fff);
+  filter: drop-shadow(1px 1px 1px #fff);
 }
 .box-one {
   color: #e44d26;
@@ -186,7 +186,7 @@ hr {
   margin-top: 5rem;
   transform: skewY(-5deg);
   background: #fff;
-  padding: 10rem 2rem;
+  padding: 5rem 0;
 }
 .projects-container {
   transform: skewY(5deg);
@@ -194,4 +194,137 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.projects-inner-container {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+.project-card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.project-card:before,
+.project-card:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 1rem;
+}
+.project-card:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+.project-card button {
+  border: none;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  position: relative;
+  top: 50px;
+  left: calc(50% - 4rem);
+}
+.project-title {
+  position: relative;
+  bottom: calc(-300px + 3rem);
+  right: 0;
+  left: 0;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 1rem 1rem;
+}
+#contact {
+  margin-top: 5rem;
+  color: #fff;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding: 0 0 2rem 0;
+}
+.social-menu ul {
+  display: flex;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.social-menu ul li .fab {
+  color: #030303;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.social-menu ul li .fab:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+}
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #4267b2;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #1da1f2;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #2867b2;
+}
+.social-menu ul li:nth-child(6) a:hover {
+  background-color: #0cacf4;
 }

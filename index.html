@@ -26,8 +26,8 @@
         <h1 class="header-text">Hi, I'm Kevin</h1>
         <h1 class="header-text">I'm a Front-end Developer</h1>
         <h2 class="header-subtext">I build websites and web applications.</h2>
-        <a class="explore-btn" href="#about">
-          Explore Portfolio <i class="fas fa-arrow-right" id="btn-arrow"></i>
+        <a class="explore-btn" href="#projects">
+          SEE PROJECTS <i class="fas fa-arrow-right" id="btn-arrow"></i>
         </a>
       </div>
     </header>
@@ -90,8 +90,84 @@
         <div class="projects-container">
           <h2>PROJECTS</h2>
           <hr />
+          <div class="projects-inner-container">
+            <div class="project-card">
+              <button>VIEW PROJECT</button>
+              <div class="project-title"></div>
+            </div>
+            <div class="project-card">
+              <button>VIEW PROJECT</button>
+              <div class="project-title"></div>
+            </div>
+            <div class="project-card">
+              <button>VIEW PROJECT</button>
+              <div class="project-title"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+          <h2>CONTACT</h2>
+          <hr class="white-hr" />
+          <div class="contact-inner-container">
+            <div class="social-menu">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/KevinSkayroJourney"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/Kevinskayro"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/kevinskayro_journey/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UC4SZMSA6juTx9aCCCsu-0iw"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/kevin-castro-5b8252170/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://github.com/KevinSkayro"
+                    ><i class="fab fa-github-alt"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(".explore-btn").on("click", function () {
+      $("html, body").animate(
+        {
+          scrollTop: $(this.hash).offset().top + 50,
+        },
+        1000
+      );
+    });
+  </script>
 </html>
