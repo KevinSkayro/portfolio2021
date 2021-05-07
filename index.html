@@ -26,7 +26,7 @@
         <h1 class="header-text">Hi, I'm Kevin</h1>
         <h1 class="header-text">I'm a Front-end Developer</h1>
         <h2 class="header-subtext">I build websites and web applications.</h2>
-        <a class="explore-btn" href="#projects">
+        <a data-goto-btn class="explore-btn" href="#projects">
           SEE PROJECTS <i class="fas fa-arrow-right" id="btn-arrow"></i>
         </a>
       </div>
@@ -54,7 +54,11 @@
               </p>
             </div>
             <div class="about-content content-two">
-              <img src="./IMG/2590505.png" alt="" />
+              <img
+                title="People vector"
+                src="./IMG/2590505.png"
+                alt="Vector of person programming"
+              />
             </div>
           </div>
         </div>
@@ -92,20 +96,55 @@
           <hr />
           <div class="projects-inner-container">
             <div class="project-card">
-              <button>VIEW PROJECT</button>
+              <div class="overlay"></div>
+              <button data-popup-target="#popup-1" class="preview-btn">
+                VIEW PROJECT
+              </button>
               <div class="project-title"></div>
             </div>
             <div class="project-card">
-              <button>VIEW PROJECT</button>
+              <div class="overlay"></div>
+              <button data-popup-target="#popup-2" class="preview-btn">
+                VIEW PROJECT
+              </button>
               <div class="project-title"></div>
             </div>
             <div class="project-card">
-              <button>VIEW PROJECT</button>
+              <div class="overlay"></div>
+              <button data-popup-target="#popup-3" class="preview-btn">
+                VIEW PROJECT
+              </button>
               <div class="project-title"></div>
             </div>
           </div>
         </div>
       </section>
+      <div class="popups">
+        <div data-close-popup class="popup" id="popup-1">
+          <div class="popup-content">
+            <div class="close-popup-container">
+              <i data-close-popup class="fas fa-times"></i>
+            </div>
+            1
+          </div>
+        </div>
+        <div data-close-popup class="popup" id="popup-2">
+          <div class="popup-content">
+            <div class="close-popup-container">
+              <i data-close-popup class="fas fa-times"></i>
+            </div>
+            2
+          </div>
+        </div>
+        <div data-close-popup class="popup" id="popup-3">
+          <div class="popup-content">
+            <div class="close-popup-container">
+              <i data-close-popup class="fas fa-times"></i>
+            </div>
+            3
+          </div>
+        </div>
+      </div>
       <section id="contact">
         <div class="contact-container">
           <h2>CONTACT</h2>
@@ -155,13 +194,20 @@
             </div>
           </div>
         </div>
+        <a class="footer-links" href="https://www.freepik.com/vectors/people"
+          >People vector in "about" section created by pikisuperstar -
+          www.freepik.com</a
+        >
+        <a class="footer-links" href="https://www.kevinskayro.com"
+          >Site by Kevin Castro</a
+        >
       </section>
     </main>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <script>
-    $(".explore-btn").on("click", function () {
+    $("[data-goto-btn]").on("click", function () {
       $("html, body").animate(
         {
           scrollTop: $(this.hash).offset().top + 50,
@@ -170,4 +216,5 @@
       );
     });
   </script>
+  <script src="./script.js"></script>
 </html>
