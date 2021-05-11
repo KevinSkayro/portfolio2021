@@ -18,191 +18,200 @@
     <title>Kevin Castro</title>
   </head>
   <body>
-    <header class="video-container">
-      <div class="fullscreen-video-wrap">
-        <video src="./VIDEO/Motion.mp4" autoplay muted loop></video>
-      </div>
-      <div class="hero-content">
-        <h1 class="header-text">Hi, I'm Kevin</h1>
-        <h1 class="header-text">I'm a Front-end Developer</h1>
-        <h2 class="header-subtext">I build websites and web applications.</h2>
-        <a data-goto-btn class="explore-btn" href="#projects">
-          SEE PROJECTS <i class="fas fa-arrow-right" id="btn-arrow"></i>
-        </a>
-      </div>
-    </header>
-    <main>
-      <section id="about">
-        <div class="about-container">
-          <h2>ABOUT</h2>
-          <hr />
-          <div class="about-inner-container">
-            <div class="about-content content-one">
-              <h3>
-                Front-end focused with <br />
-                full stack experience
-              </h3>
-              <p>
-                As a curious developer I always find myself learning new things
-                to inprove my skills and can adapt to new technologies within a
-                few days.
-              </p>
-              <p>
-                I have most of my experience within the front-end space (HTML,
-                CSS, JavaScript) but letely I've been working a lot with PHP and
-                mySQL which I like and I find myself pretty confident about.
-              </p>
+    <div class="main-container">
+      <header class="video-container">
+        <div class="fullscreen-video-wrap">
+          <video src="./VIDEO/Motion.mp4" autoplay muted loop></video>
+        </div>
+        <div class="hero-content">
+          <h1 class="header-text">Hi, I'm Kevin</h1>
+          <h1 class="header-text">I'm a Front-end Developer</h1>
+          <h2 class="header-subtext">I build websites and web applications.</h2>
+          <a data-goto-btn class="explore-btn" href="#projects">
+            SEE PROJECTS <i class="fas fa-arrow-right" id="btn-arrow"></i>
+          </a>
+        </div>
+      </header>
+      <main>
+        <section id="about">
+          <div class="about-container">
+            <h2>ABOUT</h2>
+            <hr />
+            <div class="about-inner-container">
+              <div class="about-content content-one">
+                <h3>
+                  Front-end focused with <br />
+                  full stack experience
+                </h3>
+                <p>
+                  As a curious developer I always find myself learning new
+                  things to inprove my skills and can adapt to new technologies
+                  within a few days.
+                </p>
+                <p>
+                  I have most of my experience within the front-end space (HTML,
+                  CSS, JavaScript) but letely I've been working a lot with PHP
+                  and mySQL which I like and I find myself pretty confident
+                  about.
+                </p>
+              </div>
+              <div class="about-content content-two">
+                <img
+                  title="People vector"
+                  src="./IMG/2590505.png"
+                  alt="Vector of person programming"
+                />
+              </div>
             </div>
-            <div class="about-content content-two">
-              <img
-                title="People vector"
-                src="./IMG/2590505.png"
-                alt="Vector of person programming"
-              />
+          </div>
+        </section>
+        <section id="tech">
+          <div class="tech-container">
+            <h2>TECHNOLOGIES</h2>
+            <hr class="white-hr" />
+            <div class="tech-inner-container">
+              <div class="box box-one">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="box box-two">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="box box-three">
+                <i class="fab fa-js"></i>
+              </div>
+              <div class="box box-four">
+                <i class="fab fa-php"></i>
+              </div>
+              <div class="box box-five">
+                <i class="fas fa-database"></i>
+                <span>mySQL</span>
+              </div>
+              <div class="box box-six">
+                <i class="fab fa-wordpress"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="projects-container">
+            <h2>PROJECTS</h2>
+            <hr />
+            <div class="projects-inner-container">
+              <div data-card-hover="#card-1" class="project-card" id="card-1">
+                <div class="overlay"></div>
+                <button data-popup-target="#popup-1" class="preview-btn">
+                  VIEW PROJECT
+                </button>
+                <div class="project-title"></div>
+              </div>
+              <div data-card-hover="#card-2" class="project-card" id="card-2">
+                <div class="overlay"></div>
+                <button data-popup-target="#popup-2" class="preview-btn">
+                  VIEW PROJECT
+                </button>
+                <div class="project-title"></div>
+              </div>
+              <div data-card-hover="#card-3" class="project-card" id="card-3">
+                <div class="overlay"></div>
+                <button data-popup-target="#popup-3" class="preview-btn">
+                  VIEW PROJECT
+                </button>
+                <div class="project-title"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="popups">
+          <div data-close-popup class="popup" id="popup-1">
+            <div class="popup-content">
+              <div class="close-popup-container">
+                <i data-close-popup class="fas fa-times"></i>
+              </div>
+              1
+            </div>
+          </div>
+          <div data-close-popup class="popup" id="popup-2">
+            <div class="popup-content">
+              <div class="close-popup-container">
+                <i data-close-popup class="fas fa-times"></i>
+              </div>
+              2
+            </div>
+          </div>
+          <div data-close-popup class="popup" id="popup-3">
+            <div class="popup-content">
+              <div class="close-popup-container">
+                <i data-close-popup class="fas fa-times"></i>
+              </div>
+              3
             </div>
           </div>
         </div>
-      </section>
-      <section id="tech">
-        <div class="tech-container">
-          <h2>TECHNOLOGIES</h2>
-          <hr class="white-hr" />
-          <div class="tech-inner-container">
-            <div class="box box-one">
-              <i class="fab fa-html5"></i>
-            </div>
-            <div class="box box-two">
-              <i class="fab fa-css3-alt"></i>
-            </div>
-            <div class="box box-three">
-              <i class="fab fa-js"></i>
-            </div>
-            <div class="box box-four">
-              <i class="fab fa-php"></i>
-            </div>
-            <div class="box box-five">
-              <i class="fas fa-database"></i>
-              <span>mySQL</span>
-            </div>
-            <div class="box box-six">
-              <i class="fab fa-wordpress"></i>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <div class="projects-container">
-          <h2>PROJECTS</h2>
-          <hr />
-          <div class="projects-inner-container">
-            <div class="project-card">
-              <div class="overlay"></div>
-              <button data-popup-target="#popup-1" class="preview-btn">
-                VIEW PROJECT
-              </button>
-              <div class="project-title"></div>
-            </div>
-            <div class="project-card">
-              <div class="overlay"></div>
-              <button data-popup-target="#popup-2" class="preview-btn">
-                VIEW PROJECT
-              </button>
-              <div class="project-title"></div>
-            </div>
-            <div class="project-card">
-              <div class="overlay"></div>
-              <button data-popup-target="#popup-3" class="preview-btn">
-                VIEW PROJECT
-              </button>
-              <div class="project-title"></div>
+        <section id="contact">
+          <div class="contact-container">
+            <h2>CONTACT</h2>
+            <hr class="white-hr" />
+            <div class="contact-inner-container">
+              <div class="social-menu">
+                <ul>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/KevinSkayroJourney"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://twitter.com/Kevinskayro"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/kevinskayro_journey/"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.youtube.com/channel/UC4SZMSA6juTx9aCCCsu-0iw"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/kevin-castro-5b8252170/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://github.com/KevinSkayro"
+                      ><i class="fab fa-github-alt"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <div class="popups">
-        <div data-close-popup class="popup" id="popup-1">
-          <div class="popup-content">
-            <div class="close-popup-container">
-              <i data-close-popup class="fas fa-times"></i>
-            </div>
-            1
-          </div>
-        </div>
-        <div data-close-popup class="popup" id="popup-2">
-          <div class="popup-content">
-            <div class="close-popup-container">
-              <i data-close-popup class="fas fa-times"></i>
-            </div>
-            2
-          </div>
-        </div>
-        <div data-close-popup class="popup" id="popup-3">
-          <div class="popup-content">
-            <div class="close-popup-container">
-              <i data-close-popup class="fas fa-times"></i>
-            </div>
-            3
-          </div>
-        </div>
-      </div>
-      <section id="contact">
-        <div class="contact-container">
-          <h2>CONTACT</h2>
-          <hr class="white-hr" />
-          <div class="contact-inner-container">
-            <div class="social-menu">
-              <ul>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.facebook.com/KevinSkayroJourney"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://twitter.com/Kevinskayro"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/kevinskayro_journey/"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.youtube.com/channel/UC4SZMSA6juTx9aCCCsu-0iw"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/kevin-castro-5b8252170/"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://github.com/KevinSkayro"
-                    ><i class="fab fa-github-alt"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <a class="footer-links" href="https://www.freepik.com/vectors/people"
-          >People vector in "about" section created by pikisuperstar -
-          www.freepik.com</a
-        >
-        <a class="footer-links" href="https://www.kevinskayro.com"
-          >Site by Kevin Castro</a
-        >
-      </section>
-    </main>
+          <a
+            target="_blank"
+            class="footer-links"
+            href="https://www.freepik.com/vectors/people"
+            >People vector in "about" section created by pikisuperstar -
+            www.freepik.com</a
+          >
+          <a
+            target="_blank"
+            class="footer-links"
+            href="https://www.kevinskayro.com"
+            >Site by Kevin Castro</a
+          >
+        </section>
+      </main>
+    </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

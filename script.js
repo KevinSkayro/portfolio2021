@@ -1,3 +1,4 @@
+//open project's popups start
 const openPopupBtn = document.querySelectorAll("[data-popup-target]");
 const closePopupBtn = document.querySelectorAll("[data-close-popup]");
 
@@ -23,3 +24,18 @@ function closePopUp(popup) {
   if (popup == null) return;
   popup.classList.remove("active");
 }
+//open project's popups end
+
+//alternative to hover effect on touch devices
+const projectCard = document.querySelectorAll("[data-card-hover]");
+
+projectCard.forEach((card) => {
+  card.addEventListener("touchend", () => {
+    card.classList.toggle("touch-card");
+  });
+});
+projectCard.forEach((card) => {
+  card.addEventListener("mouseover", () => {
+    card.classList.remove("touch-card");
+  });
+});
