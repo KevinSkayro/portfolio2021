@@ -295,45 +295,59 @@ hr {
   color: #fff;
 }
 /*popup style start*/
-.popup {
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-  transform: scale(0);
-  transition: 0.3s ease-in-out;
-  /* z-index: 2; */
-}
+
 .popup.active {
   opacity: 1;
   pointer-events: all;
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
 }
-.popup-content {
+.popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 1000px;
-  max-width: 80%;
   height: 500px;
+  max-width: 80%;
   background: #fff;
   border-radius: 1rem;
+  padding: 1rem;
   pointer-events: none;
-  /* z-index: 4; */
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -moz-transform: translate(-50%, -50%) scale(0);
+  -o-transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s ease-in-out;
+  z-index: 3;
 }
 .close-popup-container {
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
   font-size: 1.5rem;
   text-align: end;
 }
 .fa-times:hover {
   cursor: pointer;
   color: #f21137;
+}
+.popup-overlay {
+  position: fixed;
+  /* opacity: 0; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+.popup-overlay.active {
+  pointer-events: all;
+  transform: scale(1);
 }
 /*popup style end*/
 #contact {
