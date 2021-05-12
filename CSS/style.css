@@ -227,7 +227,7 @@ hr {
 .project-card:hover .preview-btn,
 .touch-card .preview-btn {
   opacity: 1;
-  transform: translateY(calc(150px - 1.5rem));
+  transform: translateY(calc(150px - 1.5rem)) scale(1);
 }
 .project-card:before,
 .project-card:after {
@@ -276,7 +276,7 @@ hr {
   position: relative;
   opacity: 0;
   transition: 0.35s ease;
-  transform: translateY(0);
+  transform: translateY(0) scale(0);
   left: calc(50% - 4rem);
 }
 
@@ -401,7 +401,8 @@ hr {
   text-align: center;
   transition: 0.5s;
 }
-.social-menu ul li a:hover {
+.social-menu ul li a:hover,
+.touch-link ul li a {
   transform: translate(0, -10px);
 }
 .social-menu ul li:nth-child(1) a:hover {
