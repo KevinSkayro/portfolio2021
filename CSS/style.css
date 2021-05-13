@@ -401,8 +401,7 @@ hr {
   text-align: center;
   transition: 0.5s;
 }
-.social-menu ul li a:hover,
-.touch-link ul li a {
+.social-menu ul li a:hover {
   transform: translate(0, -10px);
 }
 .social-menu ul li:nth-child(1) a:hover {
