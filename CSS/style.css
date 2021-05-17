@@ -31,12 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.7) 60%,
-    rgba(0, 0, 0, 0.1) 80%
-  );
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0.1) 80%);
   color: #fff;
 }
 .hero-content .header-text {
@@ -215,12 +210,21 @@ hr {
   height: 350px;
   margin: 1rem;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  overflow: hidden;
 }
+#card-1 {
+  background: url(../IMG/weather-app-preview.gif) bottom left/100% no-repeat;
+}
+#card-2 {
+  background: url(../IMG/todo-app-preview.gif) top left/100% no-repeat;
+}
+#card-3 {
+  background: url(../IMG/login-app-preview.gif) top left/100% no-repeat;
+}
+
 .project-card:hover {
   cursor: pointer;
 }
@@ -290,9 +294,15 @@ hr {
   right: 0;
   left: 0;
   height: 50px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 0 0 1rem 1rem;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-title span {
+  font-size: 1.3rem;
 }
 /*popup style start*/
 
@@ -309,11 +319,9 @@ hr {
   top: 50%;
   left: 50%;
   width: 1000px;
-  height: 500px;
   max-width: 80%;
   background: #fff;
   border-radius: 1rem;
-  padding: 1rem;
   pointer-events: none;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0);
@@ -348,6 +356,64 @@ hr {
 .popup-overlay.active {
   pointer-events: all;
   transform: scale(1);
+}
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.popup-content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.project-preview {
+  width: 70%;
+  border-radius: 1rem 0 0 1rem;
+  overflow: hidden;
+}
+.preview-1 img,
+.preview-2 img,
+.preview-3 img {
+  width: 100%;
+}
+.project-btns-container {
+  width: 30%;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0.8rem 1rem;
+}
+.btns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 24px);
+  /* align-items: center; */
+}
+.popup-text-container {
+  padding: 0.5rem 2rem;
+}
+.popup-text-container span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.popup-text-container p {
+  margin-bottom: 0.5rem;
+}
+.popup-text-container li {
+  line-height: 1.3rem;
+}
+.project-popup-btn {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  border-radius: 1rem;
+  color: #fff;
+  background: #f21137;
 }
 /*popup style end*/
 #contact {
@@ -411,14 +477,7 @@ hr {
   background-color: #1da1f2;
 }
 .social-menu ul li:nth-child(3) a:hover {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
 .social-menu ul li:nth-child(4) a:hover {
   background-color: #cd201f;
@@ -442,6 +501,19 @@ hr {
 @media screen and (max-width: 1280px) {
   .projects-inner-container {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .popup-content-container {
+    flex-direction: column-reverse;
+  }
+  .project-preview {
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+  }
+  .project-btns-container {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
   }
 }
 @media screen and (max-width: 1000px) {
